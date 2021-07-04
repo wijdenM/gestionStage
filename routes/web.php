@@ -25,7 +25,7 @@ Route::get('EntrepriseEt', function () {
     return view('EntrepriseEt');
 });
 
-Route::post('/index', 'App\Http\Controllers\HomeController@index')
+Route::get('/index', 'App\Http\Controllers\HomeController@index')
     ->name('index');
 
 

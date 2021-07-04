@@ -221,7 +221,7 @@
 
             </aside>-->
             <!-- end: sidebar -->
-
+            {{$countEtudiants}}
             <section role="main" class="content-body">
                 <header class="page-header">
                     <h2>Accueil</h2>
@@ -239,57 +239,6 @@
                         <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
                     </div>
                 </header>
-                <?php
-                $cmp = 0;
-                $en = 0;
-                $depart = 0;
-                $filiere = 0;
-
-
-                $servername = 'localhost';
-                $username = 'root';
-                $password = '';
-                $database = 'gestionstage';
-                $mail=session('email');
-
-                //On établit la connexion
-                $conn = new mysqli($servername, $username, $password, $database);
-
-                //On vérifie la connexion
-                if($conn->connect_error){
-                    die('Erreur : ' .$conn->connect_error);
-                }
-
-
-                $resultat = mysqli_query($conn ,"select * FROM etudiants");
-                $nb=0;
-                while($row=mysqli_fetch_array($resultat))
-                {
-                    $cmp++;
-                }
-                $resultat = mysqli_query($conn ,"select * FROM enseignants");
-                $nb=0;
-                while($row=mysqli_fetch_array($resultat))
-                {
-                    $en++;
-                }
-                $resultat = mysqli_query($conn ,"select * FROM departement");
-                $nb=0;
-                while($row=mysqli_fetch_array($resultat))
-                {
-                    $depart++;
-                }
-                $resultat = mysqli_query($conn ,"select * FROM filiere");
-                $nb=0;
-                while($row=mysqli_fetch_array($resultat))
-                {
-                    $filiere++;
-                }
-
-
-
-
-                ?>
                 <div class="panel-body">
                     <div class="col-md-6 col-lg-12 col-xl-6">
                         <div class="row">
@@ -306,8 +255,7 @@
                                                 <div class="summary">
                                                     <h4 class="title">Les étudiants</h4>
                                                     <div class="info">
-                                                        <strong class="amount"><?php
-                                                            echo $cmp;?></strong>
+                                                        <strong class="amount">{{$countEtudiants}}</strong>
                                                         <span class="text-primary"></span>
                                                     </div>
                                                 </div>
@@ -333,8 +281,7 @@
                                                 <div class="summary">
                                                     <h4 class="title">Les enseignants</h4>
                                                     <div class="info">
-                                                        <strong class="amount"><?php
-                                                            echo $en;?></strong>
+                                                        <strong class="amount">{{$countEnseignants}}</strong>
                                                     </div>
                                                 </div>
                                                 <div class="summary-footer">
@@ -358,8 +305,7 @@
                                                 <div class="summary">
                                                     <h4 class="title">les départements</h4>
                                                     <div class="info">
-                                                        <strong class="amount"><?php
-                                                            echo $depart;?></strong>
+                                                        <strong class="amount">{{$countDeparts}}</strong>
                                                     </div>
                                                 </div>
                                                 <div class="summary-footer">
@@ -384,8 +330,7 @@
                                                 <div class="summary">
                                                     <h4 class="title">les Filières</h4>
                                                     <div class="info">
-                                                        <strong class="amount"><?php
-                                                            echo $en;?></strong>
+                                                        <strong class="amount">{{$countFilieres}}</strong>
                                                     </div>
                                                 </div>
                                                 <div class="summary-footer">
