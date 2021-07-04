@@ -47,7 +47,7 @@
 						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Connexion</h2>
 					</div>
 					<div class="panel-body">
-						<form action="index" method="post">
+						<form action="{{ url('/index') }}" method="post">
 							@csrf
 							<div class="form-group mb-lg">
 								<label>Adresse</label>
@@ -78,7 +78,7 @@
 
 							<div class="row">
 								<div class="col-sm-8">
-									
+
 								</div>
 								<div class="col-sm-4 text-right">
 									<button type="submit" class="btn btn-primary hidden-xs">Connecter</button>
@@ -92,7 +92,7 @@
 					</div>
 				</div>
 
-				
+
 			</div>
 		</section>
 		<!-- end: page -->
@@ -105,13 +105,13 @@
 		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
 		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
-		
+
 		<!-- Theme Base, Components and Settings -->
 		<script src="assets/javascripts/theme.js"></script>
-		
+
 		<!-- Theme Custom -->
 		<script src="assets/javascripts/theme.custom.js"></script>
-		
+
 		<!-- Theme Initialization Files -->
 		<script src="assets/javascripts/theme.init.js"></script>
 

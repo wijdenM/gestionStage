@@ -25,10 +25,10 @@ Route::get('EntrepriseEt', function () {
     return view('EntrepriseEt');
 });
 
+Route::post('/index', 'App\Http\Controllers\HomeController@index')
+    ->name('index');
 
-Route::get('/index', function () {
-    return view('index');
-});
+
 Route::get('/indexEtudiant', function () {
     return view('indexEtudiant');
 });
@@ -396,7 +396,7 @@ Route::post('/ajoutadministrateur','App\Http\Controllers\administrateurControlle
 Route::post('/ajoutDepart','App\Http\Controllers\departementController@saveDepart');
 Route::post('/ajoutFiliere','App\Http\Controllers\filiereController@savefiliere');
 Route::post('/ajoutentreprise','App\Http\Controllers\entrepriseController@save');
-Route::post('/ajoutencadrantentreprise','App\Http\Controllers\encadentController@save'); 
+Route::post('/ajoutencadrantentreprise','App\Http\Controllers\encadentController@save');
 Route::get("message", "App\Http\Controllers\MessageController@formMessageGoogle");
 Route::post("message", "App\Http\Controllers\MessageController@sendMessageGoogle")->name('send.message.google');
 Route::post('/ajoutmessage','App\Http\Controllers\messagerieController@save');
