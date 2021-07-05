@@ -29,6 +29,8 @@ Route::get('/index', 'App\Http\Controllers\HomeController@index')
     ->name('index');
 
 
+
+
 Route::get('/indexEtudiant', function () {
     return view('indexEtudiant');
 });
@@ -65,6 +67,13 @@ Route::get('/PVV', function () {
     return view('PVV');
 
 });
+
+
+
+/*Route::get('/PVV', 'App\Http\Controllers\administrateurController@PVV')
+    ->name('PVV');
+*/
+
 Route::get('/remerciment', function () {
     return view('remerciment');
 

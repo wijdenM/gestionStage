@@ -47,7 +47,7 @@
 						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Connexion</h2>
 					</div>
 					<div class="panel-body">
-						<form action="{{ url('/index') }}" method="post">
+						<form action="{{ url('index') }}" method="post">
 							@csrf
 							<div class="form-group mb-lg">
 								<label>Adresse</label>

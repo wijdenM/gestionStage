@@ -54,7 +54,7 @@
 
 					<a href="../" class="logo">
 						<img src="images/logoisg.png" height="45" alt="JSOFT Admin" />
-						
+
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -62,15 +62,15 @@
 				</div>
 				<!-- start: search & user box -->
 				<div class="header-right">
-			
-					
-			
+
+
+
 					<!--<span class="separator"></span>-->
-			
-					
-			
+
+
+
 					<span class="separator"></span>
-			
+
 					<div id="userbox" class="userbox">
 						<a href="#" data-toggle="dropdown">
 							<figure class="profile-picture">
@@ -80,17 +80,17 @@
 								<span class="name"> {{session('nom')}} {{session('prenom')}} </span>
 								<span class="role">administrateur</span>
 							</div>
-			
+
 							<i class="fa custom-caret"></i>
 						</a>
-			
+
 						<div class="dropdown-menu">
 							<ul class="list-unstyled">
 								<li class="divider"></li>
 								<li>
 									<a role="menuitem" tabindex="-1" href="modifierProfil"><i class="fa fa-user"></i> Profile</a>
 								</li>
-								
+
 								<li>
 									<a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-power-off"></i> Deconnection </a>
 								</li>
@@ -105,7 +105,7 @@
 			<div class="inner-wrapper">
 				<!-- start: sidebar -->
 				<aside id="sidebar-left" class="sidebar-left">
-				
+
 					<div class="sidebar-header">
 						<div class="sidebar-title">
 							Navigation
@@ -114,7 +114,7 @@
 							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
 						</div>
 					</div>
-				
+
 					<div class="nano">
 						<div class="nano-content">
 							<nav id="menu" class="nav-main" role="navigation">
@@ -138,7 +138,7 @@
 											<span>Affectation </span>
 										</a>
 										<ul class="nav nav-children">
-											
+
 											<!--<li>
 												<a href="listeencadrent">
 													 Encadrant Entreprise
@@ -154,11 +154,11 @@
 													 Master
 												</a>
 											</li>
-											
-											
-											
+
+
+
 										</ul>
-										
+
 									</li>
 
 									<li class="nav-parent ">
@@ -167,8 +167,8 @@
 											<span>Liste des étudiants </span>
 										</a>
 										<ul class="nav nav-children">
-											
-										
+
+
 											<li>
 												<a href="test">
 													 Licence
@@ -179,23 +179,23 @@
 													 Master
 												</a>
 											</li>
-											
-											
-											
+
+
+
 										</ul>
-										
+
 									</li>
 
 									<li>
 										<a href="AttestationEncad">
-											
+
 											<i class="fa fa-file-text-o" aria-hidden="true"></i>
 											<span>Attestation d'encadrement</span>
 										</a>
 									</li>
 									<li>
 										<a href="PVv">
-											
+
 											<i class="fa fa-file-text-o" aria-hidden="true"></i>
 											<span>Les PVs</span>
 										</a>
@@ -204,17 +204,17 @@
 							</nav>
 						</div>
 					</div>
-									
-									
-							
-				
+
+
+
+
 				</aside>-->
 				<!-- end: sidebar -->
 
 				<section role="main" class="content-body">
 					<header class="page-header">
 						<h2>PV</h2>
-					
+
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
@@ -224,7 +224,7 @@
 								</li>
 								<li><span>Accueil</span></li>
 							</ol>
-					
+
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 						</div>
 					</header>
@@ -240,7 +240,7 @@
 								$anMin = $date->minute;
 
 								?>
-						
+
 						<h5 class="center">Ministère de l'Enseignement supérieur et de la Recherche Scientifique</h5>
 						<h5 class="center">Université de Sousse</h5>
 						<h5 class="center"><b>Institut Supérieur de Gestion Sousse</b></h5>
@@ -275,17 +275,17 @@
 							<table  class="table table-bordered table-striped mb-none ">
 								<tr>
 									<td>Président (Rapporteur)</td>
-									
+
 								</tr>
 								<tr>
 									<td>Encadrant Académique</td>
-									
+
 								</tr>
 								<tr>
 									<td>Encadrant Professionnel</td>
-									
+
 								</tr>
-								
+
 							</table>
 						</div><br>
 						<table>
@@ -304,11 +304,11 @@
 										.....................................................<br><br>
 									Lieu de stage:.........................................
 								..............................................</td>
-									
+
 								</tr>
-								
-								
-								
+
+
+
 							</table>
 						</div>
 						<br>
@@ -320,7 +320,7 @@
 									<td>
 										<h4><h4 class="center">FORME</h4>
 											<u><b>Présentation:</b></u>&nbsp;page de couverture, logos, sommaire, plan, mise en valeur du contenu, etc.<br>
-									
+
 									<u><b>Expression:</b></u> &nbsp;orthographe, tournures de phrases, etc.<br>
 									1.L'expression est correct, la lecture est agréable.<br>
 									2.Nombreuses fautes d'orthographe, mauvaises tournituresde phrases, etc.</h4></td>
@@ -332,7 +332,7 @@
 									<td>
 										<h4><h4 class="center">FOND</h4>
 											<u><b>Valeur de rapport:</b></u>&nbsp;contenu, informations, démarche méthodologique, suivie...<br>
-									
+
 									<u><b>Compréhension:</b></u> &nbsp;compréhension du sujet,dévloppement des points importants, maitrise du sujet, etc.<br>
 									<u><b>Analuse:</b></u> &nbsp; selon une méthode analytique, qualitative, quantitative, etc.<br>
 									<u><b>Objectifs:</b></u> &nbsp; objectifs validé, évolutions prévues, suggestions, etc.
@@ -348,7 +348,7 @@
 											<b>Communication orale</b><br>
 											<b>Communication visuelle</b><br>
 											<b>Discussion</b><br>
-									
+
 									</td>
 									<td><br>
 										<h4><input type="text" name="aaa">/5 points</h4>
@@ -361,18 +361,18 @@
 							<table  class="table table-bordered table-striped mb-none ">
 								<tr>
 									<td>
-										<h4 class="center"><b>Validé </b>&nbsp;&nbsp;&nbsp;&nbsp; Note: <input type="text" name="">/20<br><u><b>Mention</b></u> &nbsp;&nbsp;<input type="checkbox" name="TB">&nbsp;Très  bien &nbsp;&nbsp;<input type="checkbox" name="B">&nbsp;Bien&nbsp;&nbsp; <input type="checkbox" name="AB"> &nbsp;Assez bien&nbsp;&nbsp; <input type="checkbox" name="P">&nbsp;Passable </h4> 
+										<h4 class="center"><b>Validé </b>&nbsp;&nbsp;&nbsp;&nbsp; Note: <input type="text" name="">/20<br><u><b>Mention</b></u> &nbsp;&nbsp;<input type="checkbox" name="TB">&nbsp;Très  bien &nbsp;&nbsp;<input type="checkbox" name="B">&nbsp;Bien&nbsp;&nbsp; <input type="checkbox" name="AB"> &nbsp;Assez bien&nbsp;&nbsp; <input type="checkbox" name="P">&nbsp;Passable </h4>
 									</td>
-									
+
 								</tr>
 								<tr>
 									<td>
 									 <h4 class="center">Non Validé Note: <input type="text" name="">/20 &nbsp;(la note doit étre <10) </h4></td>
-									
+
 								</tr>
-								
-								
-								
+
+
+
 							</table>
 						</div>
 						<br><br>
@@ -405,17 +405,17 @@
 						<div class="mb-xs text-center">
 									<a href="PV2">
 									<button type="submit" class="btn btn-primary hidden-xs">Valider</button></a>
-								
+
 								</div>
 
 
 
-						 
-
-						
 
 
-						
+
+
+
+
 
 
 				</section>
@@ -427,23 +427,23 @@
 						<a href="#" class="mobile-close visible-xs">
 							Collapse <i class="fa fa-chevron-right"></i>
 						</a>
-			
+
 						<div class="sidebar-right-wrapper">
-			
+
 							<div class="sidebar-widget widget-calendar">
-								
+
 								<div data-plugin-datepicker data-plugin-skin="dark" ></div>
-			
+
 							</div>
-			
-							
-			
+
+
+
 						</div>
 					</div>
 				</div>
 			</aside>
 		</section>
-	
+
 
 		<!-- Vendor -->
 		<script src="assets/vendor/jquery/jquery.js"></script>
@@ -453,7 +453,7 @@
 		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
 		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
-		
+
 		<!-- Specific Page Vendor -->
 		<script src="assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
 		<script src="assets/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
@@ -480,13 +480,13 @@
 		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
 		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
 		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
-		
+
 		<!-- Theme Base, Components and Settings -->
 		<script src="assets/javascripts/theme.js"></script>
-		
+
 		<!-- Theme Custom -->
 		<script src="assets/javascripts/theme.custom.js"></script>
-		
+
 		<!-- Theme Initialization Files -->
 		<script src="assets/javascripts/theme.init.js"></script>
 

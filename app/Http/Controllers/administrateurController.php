@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\departement;
 use App\Models\filiere;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
 use App\Models\administrateur;
 use App\Models\etudiant;
@@ -76,8 +77,7 @@ function consulterprofilAdmin()
 
 
 function verif(request $req){
-   $administrateur = administrateur::where('email',$req->login)->where('password',md5($req->pwd))->first();
-   // var_dump ('$administrateur => ', md5($req->pwd), $req->login, $administrateur,    !isNull($administrateur ));
+    $administrateur = administrateur::where('email',$req->login)->where('password',md5($req->pwd))->first();
 	if( $administrateur){
         return view('index', [
             'countFilieres' => count(filiere::all()),
@@ -209,7 +209,10 @@ Public function getEtud()
     return view ('index',compact('data','data1','data2','data3'));
     }
 
-
+ function PVV(){
+     $date = new Date();
+     return view('remerciment', ['date' => $date]);
+ }
 
 }
 
